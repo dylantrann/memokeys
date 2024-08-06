@@ -21,3 +21,5 @@ For now, I'm thinking it should go inifite and just be a practice game. But defi
 - Make a continuous flowing version
   - An entire "sheet music" would appear, where the user can go note by note pressing the correct note
   - If scoreboarded, timer for how long to complete or how little mistakes/far ventured in timed situation 
+- Make the buttons and actual keyboard
+  - Actually this one might not be too hard, can just make overlapping buttons
