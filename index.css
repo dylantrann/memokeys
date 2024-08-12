@@ -1,0 +1,36 @@
+.white-key {
+    background-color: white;
+
+    width: 4vw;
+    height: 10vw;
+}
+
+.black-key {
+    background-color: black;
+    color: white;
+
+    width: 4vw; /* 2.5vw */
+    height: 10vw; /* 3.5vw */
+}
+
+.empty {
+    visibility: hidden;
+}
+
+#white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    width: 70%;
+}
+
+#black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: auto;
+    width: 70%;
+}
