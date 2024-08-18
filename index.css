@@ -1,20 +1,10 @@
-.white-key {
-    background-color: white;
+#keyboard {
+    position: absolute;
+    width: 80%;
+    height: 40%;
 
-    width: 4vw;
-    height: 10vw;
-}
-
-.black-key {
-    background-color: black;
-    color: white;
-
-    width: 4vw; /* 2.5vw */
-    height: 10vw; /* 3.5vw */
-}
-
-.empty {
-    visibility: hidden;
+    bottom: 10%;
+    left: 10% /* Overall Width = 80; Left + Right = 2 */
 }
 
 #white {
@@ -22,8 +12,8 @@
     justify-content: center;
     align-items: center;
 
-    margin: auto;
-    width: 70%;
+    width: 100%;
+    height: 100%;
 }
 
 #black {
@@ -31,6 +21,32 @@
     justify-content: center;
     align-items: center;
 
-    margin: auto;
-    width: 70%;
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    left: 2vw;  /* to position black keys to the right of white ones */
+}
+
+.white-key {
+    background-color: white;
+
+    padding-top: 13%; /* position letter at bottom of box */
+
+    width: 4vw;
+    height: 100%;
+    z-index: 0; /* below the black */
+}
+
+.black-key {
+    background-color: black;
+    color: white;
+
+    margin: 0 0.5vw 0 0.5vw; /* space in between while matching size of white */
+    width: 3vw; 
+    height: 100%;
+    z-index: 1; /* above the white */
+}
+
+.empty {
+    visibility: hidden;
 }
