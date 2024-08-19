@@ -50,3 +50,7 @@
 .empty {
     visibility: hidden;
 }
+
+.hidden {
+    display: none;
+}

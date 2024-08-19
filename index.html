@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="index.css"/>
+        <script src="piano.js"></script>
     </head>
     <body>
         <!-- Bar -->
@@ -11,23 +12,25 @@
         <!-- Piano -->
         <div id="keyboard">
             <div id="black">
-                <button class="black-key">C#</button>
-                <button class="black-key">D#</button>
+                <button class="black-key" data-audio="piano-mp3/Db3.mp3">C#</button>
+                <button class="black-key" data-audio="piano-mp3/Eb3.mp3">D#</button>
                 <button class="empty black-key">E#</button>
-                <button class="black-key">F#</button>
-                <button class="black-key">G#</button>
-                <button class="black-key">A#</button>
+                <button class="black-key" data-audio="piano-mp3/Gb3.mp3">F#</button>
+                <button class="black-key" data-audio="piano-mp3/Ab3.mp3">G#</button>
+                <button class="black-key" data-audio="piano-mp3/Bb3.mp3">A#</button>
                 <button class="empty black-key">B#</button>
             </div>
             <div id="white">
-                <button class="white-key">C</button>
-                <button class="white-key">D</button>
-                <button class="white-key">E</button>
-                <button class="white-key">F</button>
-                <button class="white-key">G</button>
-                <button class="white-key">A</button>
-                <button class="white-key">B</button>
+                <button class="white-key" data-audio="piano-mp3/C3.mp3">C</button>
+                <button class="white-key" data-audio="piano-mp3/D3.mp3">D</button>
+                <button class="white-key" data-audio="piano-mp3/E3.mp3">E</button>
+                <button class="white-key" data-audio="piano-mp3/F3.mp3">F</button>
+                <button class="white-key" data-audio="piano-mp3/G3.mp3">G</button>
+                <button class="white-key" data-audio="piano-mp3/A3.mp3">A</button>
+                <button class="white-key" data-audio="piano-mp3/B3.mp3">B</button>
             </div>
         </div>
+
+        <audio class="hidden" src=""></audio>
     </body>
 </html>
