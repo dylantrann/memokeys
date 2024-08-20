@@ -1,8 +1,26 @@
+/* BAR LINES */
+#bar-lines {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    left: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bar {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* KEYBOARD */
 #keyboard {
     position: absolute;
     width: 80%;
     height: 40%;
-
     bottom: 10%;
     left: 10% /* Overall Width = 80; Left + Right = 2 */
 }
@@ -47,6 +65,8 @@
     z-index: 1; /* above the white */
 }
 
+
+/* SPECIAL CLASSES */
 .empty {
     visibility: hidden;
 }
