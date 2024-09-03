@@ -1,19 +1,52 @@
 /* BAR LINES */
 #bar-lines {
     position: absolute;
-    width: 80%;
+    width: 100%;
     height: 50%;
-    left: 10%;
 
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
+/* Barlines as PNG */
 #bar {
-    object-fit: contain;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.notes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
     width: 100%;
-    height: 100%;
+    height: 30%;
+
+    /* Barlines as Background Image */
+    /* background-image: url("bar-images/bar-lines.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.notes li {
+    display: flex;
+    justify-content: center;
+
+    height: 8.6%; /* Allows notes to overflow onto each other */
+}
+
+.notes img {
+    position: relative;
+    top: -0.3vh; /* Centers the note on the barlines */
+
+    overflow: visible;
+    height: 10vh; /* Size of notes */
+}
+
+#notes-top {
+    top: 19%; 
 }
 
 /* KEYBOARD */
@@ -41,7 +74,7 @@
 
     position: absolute;
     width: 100%;
-    height: 45%;
+    height: 48%;
     left: 2vw;  /* to position black keys to the right of white ones */
 }
 
