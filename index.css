@@ -34,20 +34,30 @@
     display: flex;
     justify-content: center;
 
-    height: 8.6%; /* Allows notes to overflow onto each other */
+    height: 8.6%; /* allows notes to overflow onto each other */
+}
+
+.notes .upright {
+    position: relative; /* specifically for upright notes*/
+    top: -8vh;
 }
 
 .notes img {
-    position: relative;
-    top: -0.3vh; /* Centers the note on the barlines */
+    position: relative; /* specifically for downwards notes*/
+    top: -0.7vh; /* centers the note on the barlines */
 
     overflow: visible;
-    height: 10vh; /* Size of notes */
+    height: 10vh; /* size of notes */
 }
 
 #notes-top {
     top: 19%; 
 }
+
+#notes-bottom {
+    bottom: 17.4%;
+}
+
 
 /* KEYBOARD */
 #keyboard {
