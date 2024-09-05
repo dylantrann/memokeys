@@ -9,6 +9,7 @@ I've always strugged with reading sheet music, even after playing on and off for
 
 ## Future Additions/Updates
 For now, I'm thinking it should go inifite and just be a practice game. But definitely a lot of ideas for future implements.
+- Update the note sound effects (right now using only free ones I could find but they're kinda bad)
 - Add some sort of point system (or multiple)
   - Timer and scoreboard: can either be set amount of seconds to get as far as possible or limited wrong guesses
   - Lives (and maybe timer): limited incorrect guesses, try to get as far as possible
