@@ -42,10 +42,12 @@
     top: -8vh;
 }
 
-.notes img {
+.notes .downwards {
     position: relative; /* specifically for downwards notes*/
     top: -0.7vh; /* centers the note on the barlines */
+}
 
+.notes img {
     overflow: visible;
     height: 10vh; /* size of notes */
 }
@@ -116,4 +118,12 @@
 
 .hidden {
     display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: salmon;
 }
