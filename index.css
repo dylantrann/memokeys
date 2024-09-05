@@ -92,6 +92,8 @@
 
 .white-key {
     background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: bold;
 
     padding-top: 13%; /* position letter at bottom of box */
 
