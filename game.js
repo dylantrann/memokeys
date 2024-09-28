@@ -9,26 +9,34 @@ function init() {
     currNote.classList.remove("hidden");
 
     /**
-     * If there is existing audio playing, pauses and resets it
-     */
-    function pauseAudio() {
-        if (audio && !audio.paused) {
-            audio.pause();
-            audio.currentTime = 0;
-        }
-    }
-
-    /**
-     * Plays audio of given source
+     * Plays audio of given source, pauses if one is already playing
      * 
      * @param {*} src source of the audio to be played
      */
     function playAudio(src) {
-        pauseAudio();
+        if (audio && !audio.paused) {
+            audio.pause();
+            audio.currentTime = 0;
+        }
         audio = new Audio();
         audio.src = src;
         audio.play();
     }
+
+    // For hard coded version
+    // /**
+    //  * Plays audio of given source, pauses if one is already playing
+    //  * 
+    //  * @param {*} src source of the audio to be played
+    //  */
+    // function playAudio(src) {
+    //     if (audio && !audio.paused) {
+    //         audio.pause();
+    //         audio.currentTime = 0;
+    //     }
+    //     audio = document.querySelector(`audio[src="${src}"]`);
+    //     audio.play();
+    // }
 
     /**
      * Changes the current note and resets the piano
