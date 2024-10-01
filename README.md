@@ -30,6 +30,7 @@ I've always strugged with reading sheet music, even after playing on and off for
 - Improved audio quality
 - Fix audio response time being delayed on Safari
 
+---
 
 ### Future Additions/Updates
 For now, I'm thinking it should go inifite and just be a practice game. But definitely a lot of ideas for future implements.
