@@ -1,4 +1,4 @@
-# Piano Game (title still being considered)
+# Memokeys
 
 I've always strugged with reading sheet music, even after playing on and off for over 4 years. That being said, I think a simple game to help me just get used to seeing the notes and the keys they represent would help a lot. I've always wanted to have an app to do exactly that, but since I couldn't find a decent one, heck might as well make it myself. 
 
@@ -24,3 +24,9 @@ For now, I'm thinking it should go inifite and just be a practice game. But defi
 - Make a continuous flowing version
   - An entire "sheet music" would appear, where the user can go note by note pressing the correct note
   - If scoreboarded, timer for how long to complete or how little mistakes/far ventured in timed situation 
+
+## Update Log
+- V1.1
+  - Update name to Memokeys
+  - Improved audio quality
+  - Fix audio response time being delayed on Safari

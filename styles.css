@@ -1,0 +1,126 @@
+/* >> BAR LINES << */
+#bar-lines {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: center;
+}
+
+#bar {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.notes {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    position: absolute;
+    width: 100%;
+    height: 30%;
+}
+
+.notes li {
+    display: flex;
+    justify-content: center;
+
+    height: 8.6%; /* allows notes to overflow onto each other */
+}
+
+.notes .upright {
+    position: relative; /* specifically for upright notes*/
+    top: -8vh;
+}
+
+.notes .downwards {
+    position: relative; /* specifically for downwards notes*/
+    top: -0.7vh; /* centers the note on the barlines */
+}
+
+.notes img {
+    overflow: visible;
+    height: 10vh; /* size of notes */
+}
+
+#notes-top {
+    top: 19%; 
+}
+
+#notes-bottom {
+    bottom: 17.4%;
+}
+
+
+/* >> KEYBOARD << */
+#keyboard {
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    bottom: 10%;
+}
+
+#white {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+#black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    width: 100%;
+    height: 48%;
+    left: 3vh;  /* to position black keys to the right of white ones */
+}
+
+.white-key {
+    background-color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+    font-weight: bold;
+
+    padding-top: 20vh; /* position letter at bottom of box */
+
+    width: 6vh;
+    height: 100%;
+    z-index: 0; /* below the black */
+    border: 0.1vw solid black;
+}
+
+.black-key {
+    background-color: black;
+    color: white;
+
+    margin: 0 1vh 0 1vh; /* space in between while matching size of white */
+    width: 4vh; 
+    height: 100%;
+    z-index: 1; /* above the white */
+    border: 0.1vw solid black;
+}
+
+
+/* >> SPECIAL CLASSES << */
+.empty {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: salmon;
+}
