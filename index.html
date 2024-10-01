@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css"/>
+        <link rel="stylesheet" href="styles.css"/>
         <script src="game.js"></script>
     </head>
     <body>
@@ -50,30 +50,16 @@
                 <button class="empty black-key">B#</button>
             </div>
             <div id="white">
-                <button class="white-key" data-audio="mp3-notes/c3.mp3" data-note="C">C</button>
+                <button class="white-key" data-audio="mp3-notes/c3.mp3" data-note="C" id="first-white">C</button>
                 <button class="white-key" data-audio="mp3-notes/d3.mp3" data-note="D">D</button>
                 <button class="white-key" data-audio="mp3-notes/e3.mp3" data-note="E">E</button>
                 <button class="white-key" data-audio="mp3-notes/f3.mp3" data-note="F">F</button>
                 <button class="white-key" data-audio="mp3-notes/g3.mp3" data-note="G">G</button>
                 <button class="white-key" data-audio="mp3-notes/a4.mp3" data-note="A">A</button>
-                <button class="white-key" data-audio="mp3-notes/b4.mp3" data-note="B">B</button>
+                <button class="white-key" data-audio="mp3-notes/b4.mp3" data-note="B" id="last-white">B</button>
             </div>
         </div>
 
         <audio class="hidden" src=""></audio>
-
-        <!-- Hard coded in case it benefits speed -->
-        <!-- <audio class="hidden" src="mp3-notes/c-3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/d-3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/f-3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/g-3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/a-4.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/c3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/d3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/e3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/f3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/g3.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/a4.mp3"></audio>
-        <audio class="hidden" src="mp3-notes/b4.mp3"></audio> -->
     </body>
 </html>

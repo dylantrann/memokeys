@@ -1,4 +1,4 @@
-/* BAR LINES */
+/* >> BAR LINES << */
 #bar-lines {
     position: absolute;
     width: 100%;
@@ -8,7 +8,6 @@
     justify-content: center;
 }
 
-/* Barlines as PNG */
 #bar {
     max-width: 100%;
     overflow: hidden;
@@ -22,12 +21,6 @@
     position: absolute;
     width: 100%;
     height: 30%;
-
-    /* Barlines as Background Image */
-    /* background-image: url("bar-images/bar-lines.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat; */
 }
 
 .notes li {
@@ -61,7 +54,7 @@
 }
 
 
-/* KEYBOARD */
+/* >> KEYBOARD << */
 #keyboard {
     position: absolute;
     width: 100%;
@@ -115,7 +108,7 @@
 }
 
 
-/* SPECIAL CLASSES */
+/* >> SPECIAL CLASSES << */
 .empty {
     visibility: hidden;
 }

@@ -1,6 +1,10 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
+    // To remove delay on devices using Safari
+    const AudioContext = window.AudioContext || window.webkitAudioContext;
+    const audioCtx = new AudioContext();
+
     const buttons = document.querySelectorAll("button");
     const notes = document.querySelectorAll("li img");
     let audio = document.getElementById("audio");
@@ -22,21 +26,6 @@ function init() {
         audio.src = src;
         audio.play();
     }
-
-    // For hard coded version
-    // /**
-    //  * Plays audio of given source, pauses if one is already playing
-    //  * 
-    //  * @param {*} src source of the audio to be played
-    //  */
-    // function playAudio(src) {
-    //     if (audio && !audio.paused) {
-    //         audio.pause();
-    //         audio.currentTime = 0;
-    //     }
-    //     audio = document.querySelector(`audio[src="${src}"]`);
-    //     audio.play();
-    // }
 
     /**
      * Changes the current note and resets the piano
