@@ -1,59 +1,3 @@
-/* >> BAR LINES << */
-#bar-lines {
-    position: absolute;
-    width: 100%;
-    height: 50%;
-
-    display: flex;
-    justify-content: center;
-}
-
-#bar {
-    max-width: 100%;
-    overflow: hidden;
-}
-
-.notes {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-
-    position: absolute;
-    width: 100%;
-    height: 30%;
-}
-
-.notes li {
-    display: flex;
-    justify-content: center;
-
-    height: 8.6%; /* allows notes to overflow onto each other */
-}
-
-.notes .upright {
-    position: relative; /* specifically for upright notes*/
-    top: -8vh;
-}
-
-.notes .downwards {
-    position: relative; /* specifically for downwards notes*/
-    top: -0.7vh; /* centers the note on the barlines */
-}
-
-.notes img {
-    overflow: visible;
-    height: 10vh; /* size of notes */
-}
-
-#notes-top {
-    top: 19%; 
-}
-
-#notes-bottom {
-    bottom: 17.4%;
-}
-
-
 /* >> KEYBOARD << */
 #keyboard {
     position: absolute;
@@ -105,22 +49,4 @@
     height: 100%;
     z-index: 1; /* above the white */
     border: 0.1vw solid black;
-}
-
-
-/* >> SPECIAL CLASSES << */
-.empty {
-    visibility: hidden;
-}
-
-.hidden {
-    display: none;
-}
-
-.correct {
-    background-color: lightgreen;
-}
-
-.incorrect {
-    background-color: salmon;
 }

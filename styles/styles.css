@@ -1,0 +1,34 @@
+/* >> Navbar << */
+nav {
+    display: flex;
+    float: right;
+}
+
+nav button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-left: 0.3vw;
+    
+    z-index: 1;     /* to overtake the barlines */
+}
+
+nav button:hover{
+    background-color: black;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: salmon;
+}
