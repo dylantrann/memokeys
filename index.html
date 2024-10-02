@@ -3,12 +3,23 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon_io/favicon.ico">
+
+        <link rel="stylesheet" href="styles/barlines.css"/>
+        <link rel="stylesheet" href="styles/piano.css"/>
+        <link rel="stylesheet" href="styles/styles.css"/>
         <script src="game.js"></script>
     </head>
     <body>
-        <!-- Bar -->
-         <div id="bar-lines">
+        <!-- Options -->
+        <nav>
+            <button id="htp"></button>
+            <button id="stats"></button>
+            <button id="settings"></button>
+        </nav>
+
+        <!-- Bar Lines -->
+        <div id="bar-lines">
             <img id="bar" src="bar-images/bar-lines.png">
             <ul id="notes-top" class="notes">
                 <li><img class="hidden downwards" data-note="F" src="bar-images/quarter-note-down.svg"></li>

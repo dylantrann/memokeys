@@ -1,11 +1,7 @@
 window.addEventListener('DOMContentLoaded', init);
 
 function init() {
-    // To remove delay on devices using Safari
-    const AudioContext = window.AudioContext || window.webkitAudioContext;
-    const audioCtx = new AudioContext();
-
-    const buttons = document.querySelectorAll("button");
+    const buttons = document.querySelectorAll("button.black-key, button.white-key");
     const notes = document.querySelectorAll("li img");
     let audio = document.getElementById("audio");
     let currNote = notes[Math.floor(Math.random() * 22)];
