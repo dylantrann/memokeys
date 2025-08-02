@@ -30,3 +30,9 @@ For now, I'm thinking it should go inifite and just be a practice game. But defi
   - Update name to Memokeys
   - Improved audio quality
   - Fix audio response time being delayed on Safari
+
+- V1.1.1
+  - Updated tab name and icon
+  - Changed audio from keys to notes
+  - Audio plays correct octave now
+  - Removed audio from wrong notes, only correct ones
