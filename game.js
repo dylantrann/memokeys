@@ -8,22 +8,22 @@ function init() {
     const buttons = document.querySelectorAll("button");
     const notes = document.querySelectorAll("li img");
     let audio = document.getElementById("audio");
-    let currNote = notes[Math.floor(Math.random() * 22)];
+    let currNote = notes[Math.floor(Math.random() * 22)];   // pick random note
 
-    currNote.classList.remove("hidden");
+    currNote.classList.remove("hidden");    // unveil the note
+    audio = new Audio();
+    audio.src = currNote.dataset.audio;     // assign its audio
 
     /**
      * Plays audio of given source, pauses if one is already playing
      * 
      * @param {*} src source of the audio to be played
      */
-    function playAudio(src) {
+    function playAudio() {
         if (audio && !audio.paused) {
             audio.pause();
             audio.currentTime = 0;
         }
-        audio = new Audio();
-        audio.src = src;
         audio.play();
     }
 
@@ -34,6 +34,8 @@ function init() {
         currNote.classList.add("hidden");
         currNote = notes[Math.floor(Math.random() * 22)];
         currNote.classList.remove("hidden");
+        audio = new Audio();
+        audio.src = currNote.dataset.audio;
 
         // re-enables all buttons and resets color
         buttons.forEach(button => {
@@ -80,7 +82,6 @@ function init() {
                 setTimeout(() => {reroll();}, 1000)
             }
             else {
-                playAudio(button.dataset.audio);
                 incorrect(button);
             }
         });

@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <title>Memokeys</title>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles.css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <script src="game.js"></script>
     </head>
     <body>
@@ -11,52 +13,52 @@
          <div id="bar-lines">
             <img id="bar" src="bar-images/bar-lines.png">
             <ul id="notes-top" class="notes">
-                <li><img class="hidden downwards" data-note="F" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="E" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="D" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="C" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="B" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden upright" data-note="A" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="G" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="F" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="E" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="D" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="C" src="bar-images/mid-c-up.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/f5.mp3" data-note="F" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/e5.mp3" data-note="E" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/d5.mp3" data-note="D" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/c5.mp3" data-note="C" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/b4.mp3" data-note="B" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/a4.mp3" data-note="A" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/g4.mp3" data-note="G" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/f4.mp3" data-note="F" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/e4.mp3" data-note="E" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/d4.mp3" data-note="D" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/c4.mp3" data-note="C" src="bar-images/mid-c-up.svg"></li>
             </ul>
             <ul id="notes-bottom" class="notes">
-                <li><img class="hidden downwards" data-note="C" src="bar-images/mid-c-down.svg"></li>
-                <li><img class="hidden downwards" data-note="B" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="A" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="G" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="F" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="E" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden downwards" data-note="D" src="bar-images/quarter-note-down.svg"></li>
-                <li><img class="hidden upright" data-note="C" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="B" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="A" src="bar-images/quarter-note-up.svg"></li>
-                <li><img class="hidden upright" data-note="G" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/c4.mp3" data-note="C" src="bar-images/mid-c-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/b3.mp3" data-note="B" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/a3.mp3" data-note="A" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/g3.mp3" data-note="G" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/f3.mp3" data-note="F" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/e3.mp3" data-note="E" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden downwards" data-audio="mp3-notes/d3.mp3" data-note="D" src="bar-images/quarter-note-down.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/c3.mp3" data-note="C" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/b2.mp3" data-note="B" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/a2.mp3" data-note="A" src="bar-images/quarter-note-up.svg"></li>
+                <li><img class="hidden upright" data-audio="mp3-notes/g2.mp3" data-note="G" src="bar-images/quarter-note-up.svg"></li>
             </ul>
          </div>
 
         <!-- Piano -->
         <div id="keyboard">
             <div id="black">
-                <button class="black-key" data-audio="mp3-notes/c-3.mp3" data-note="C#"></button>
-                <button class="black-key" data-audio="mp3-notes/d-3.mp3" data-note="D#"></button>
+                <button class="black-key" data-note="C#"></button>
+                <button class="black-key" data-note="D#"></button>
                 <button class="empty black-key"></button>
-                <button class="black-key" data-audio="mp3-notes/f-3.mp3" data-note="F#"></button>
-                <button class="black-key" data-audio="mp3-notes/g-3.mp3" data-note="G#"></button>
-                <button class="black-key" data-audio="mp3-notes/a-4.mp3" data-note="A#"></button>
+                <button class="black-key" data-note="F#"></button>
+                <button class="black-key" data-note="G#"></button>
+                <button class="black-key" data-note="A#"></button>
                 <button class="empty black-key">B#</button>
             </div>
             <div id="white">
-                <button class="white-key" data-audio="mp3-notes/c3.mp3" data-note="C" id="first-white">C</button>
-                <button class="white-key" data-audio="mp3-notes/d3.mp3" data-note="D">D</button>
-                <button class="white-key" data-audio="mp3-notes/e3.mp3" data-note="E">E</button>
-                <button class="white-key" data-audio="mp3-notes/f3.mp3" data-note="F">F</button>
-                <button class="white-key" data-audio="mp3-notes/g3.mp3" data-note="G">G</button>
-                <button class="white-key" data-audio="mp3-notes/a4.mp3" data-note="A">A</button>
-                <button class="white-key" data-audio="mp3-notes/b4.mp3" data-note="B" id="last-white">B</button>
+                <button class="white-key" data-note="C" id="first-white">C</button>
+                <button class="white-key" data-note="D">D</button>
+                <button class="white-key" data-note="E">E</button>
+                <button class="white-key" data-note="F">F</button>
+                <button class="white-key" data-note="G">G</button>
+                <button class="white-key" data-note="A">A</button>
+                <button class="white-key" data-note="B" id="last-white">B</button>
             </div>
         </div>
 
